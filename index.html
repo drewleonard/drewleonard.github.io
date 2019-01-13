@@ -1,51 +1,16 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>thesis</title>
-  </head>
-  <body>
-  	<?php
-  	echo”Your first PHP code”;
-	<!-- setlocale(LC_MONETARY, 'en_US');
-
-	// Number of images: total
-	$nImgs = 3500; // TODO: get
-
-	// Number of images: subset
-	$nSlice = 10;
-
-	// Get ids of images to pull
-	$idsAll = range(1, $nImgs);
-	shuffle($idsAll);
-	$idsSubset = array_slice($idsAll, 0, $nSlice);
-
-	// Set image properties
-	$imgHeight = 4400;
-	$imgWidth = 3400;
-
-	// Build array of image tags (html)
-	$imgTags = [];
-	foreach($idsSubset as $id) {
-
-		$imgTag = '<img src="https://storage.cloud.google.com/thesis-ira-ads/ira_ad_'.$id.'.png" height="'.$imgHeight.'" width="'.$imgWidth.'" style="width:'.$imgWidth.'px; height:'.$imgHeight.'px;"/>';
-		$imgTags[] = $imgTag;
-
-	}
-
-	$xmlResult = new SimpleXMLElement('<xml/>');
-	$imgTagsChild = $xmlResult->addChild('imgTagsChild');
-
-	foreach($imgTags as $imgTagN=>$imgTag) {
-
-		$imgTagsChild->addChild('imgTag'.$imgTagN, $imgTag);
-
-	}
-
-	Header('Content-type: text/xml');
-	print($xmlResult->asXML()); -->
-
-	?>
-
-  </body>
+<head>
+<title>Getting Started With PHP</title>
+</head>
+<body>
+<h1>Beginners Guide For PHP</h1>
+<p>Tutorial Series For Learning PHP</p>
+<?php
+$a=99;
+$b=”Calculus”;
+echo “Numbers you have got in $b are $a”.”<br/>”;
+echo ‘Numbers you have got in $b are $a’;
+?>
+</body>
 </html>
