@@ -1,10 +1,7 @@
 <?php
 
 setlocale(LC_MONETARY, 'en_US');
-header('Content-type: text/xml');
 
-
-// TODO 
 // Number of images: total
 $nImgs = 3500; // TODO: get
 
@@ -38,7 +35,10 @@ foreach($imgTags as $imgTagN=>$imgTag) {
 
 }
 
+header('Content-type: text/xml');
 print($xmlResult->asXML());
+
+?>
 
 // Header('Content-type: text/xml');
 // print($xmlResult->asXML());
