@@ -38,4 +38,7 @@ foreach($imgTags as $imgTagN=>$imgTag) {
 }
 
 Header('Content-type: text/xml');
-print($xmlResult->asXML());
+echo $xmlResult->asXML();
+
+// Header('Content-type: text/xml');
+// print($xmlResult->asXML());
